@@ -94,6 +94,7 @@ input {
 .content-first--image--foto {
     height: 124px;
     width: 124px;
+    object-fit: cover;
     border-radius: 12px;
     transition: var(--transition-duration);
     box-shadow: 0px 0px 10px 1px #5c5c5c42;
