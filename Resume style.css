@@ -201,6 +201,7 @@ textarea {
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
+    cursor: pointer;
 }
 
 .content-first__box-second__Languages__second--line {
@@ -211,6 +212,7 @@ textarea {
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
+    cursor: pointer;
 }
 
 .content-first__box-second__Languages__third--line {
@@ -221,6 +223,7 @@ textarea {
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
+    cursor: pointer;
 }
 
 .content-first__box-second__Languages__first--line--procent {
