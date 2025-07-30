@@ -74,6 +74,22 @@ body {
 
 input {
     outline: none;
+    font-family: var(--transition-duration);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    field-sizing: content;
+}
+
+textarea {
+    outline: none;
+    font-family: var(--transition-duration);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    resize: none;
+    overflow: hidden;
+    field-sizing: content;
 }
 
 
@@ -115,7 +131,6 @@ input {
     transform: translate(-50%, -50%);
     transition: var(--transition-duration);
     opacity: 0;
-    padding: 36px;
     cursor: pointer;
 }
 
@@ -182,6 +197,7 @@ input {
     position: absolute;
     left: 70px;
     width: 168px;
+    min-width: 1px;
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
@@ -191,6 +207,7 @@ input {
     position: absolute;
     left: 70px;
     width: 168px;
+    min-width: 1px;
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
@@ -200,9 +217,41 @@ input {
     position: absolute;
     left: 70px;
     width: 129px;
+    min-width: 1px;
     height: 11px;
     border-radius: 3px;
     background-color: var(--color-green);
+}
+
+.content-first__box-second__Languages__first--line--procent {
+    position: absolute;
+    right: -11.5px;
+    top: 0px;
+    font-size: 10px;
+    transition: 300ms;
+    opacity: 0;
+}
+
+.content-first__box-second__Languages__second--line--procent {
+    position: absolute;
+    right: -11.5px;
+    top: 0px;
+    font-size: 10px;
+    transition: 300ms;
+    opacity: 0;
+}
+
+.content-first__box-second__Languages__third--line--procent {
+    position: absolute;
+    right: -11.5px;
+    top: 0px;
+    font-size: 10px;
+    transition: 300ms;
+    opacity: 0;
+}
+
+.is-dragging {
+    scale: 1.1
 }
 
 .slider {
@@ -246,6 +295,7 @@ input {
 .content-second__column-first__floor-first__ciel--text-first {
     font-weight: 500;
     font-size: 8px;
+    color: var(--color-white);
 }
 
 .content-second__column-first__floor-first__ciel--text-second {
@@ -269,42 +319,21 @@ input {
 .content-second__column-first__floor-first__floor--text-first--element-first {
     font-weight: 500;
     font-size: 10px;
+    color: var(--color-white);
 }
 
 .content-second__column-first__floor-first__floor--text-first--element-second {
     font-weight: 400;
     font-size: 8px;
+    color: var(--color-white);
 }
 
 .content-second__column-first__floor-first__floor--text-second {
     font-weight: 400;
     font-size: 8px;
-    max-width: 222px;
+    width: 222px;
     position: relative;
-}
-
-.content-second__column-first__floor-first__floor--text-second::before {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: -7px;
-}
-
-.content-second__column-first__floor-first__floor--text-second::after {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: -7px;
+    color: var(--color-white);
 }
 
 .content-second__column-first__floor-second {
@@ -328,6 +357,10 @@ input {
     margin-top: 8px;
 }
 
+.content-second__column-first__floor-second__column__left--text {
+    width: 122px;
+}
+
 .content-second__column-first__floor-second__column__left--text--first {
     font-weight: 500;
     font-size: 10px;
@@ -343,44 +376,8 @@ input {
 .content-second__column-first__floor-second__column--right {
     font-weight: 400;
     font-size: 8px;
-    max-width: 239px;
+    width: 230px;
     position: relative;
-}
-
-.content-second__column-first__floor-second__column--right::before {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: -7px;
-}
-
-.content-second__column-first__floor-second__column--right::after {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    bottom: 17.5px;
-    left: -7px;
-}
-
-.content-second__column-first__floor-second__column__left--text--second::after {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    bottom: 4px;
-    right: -88px;
 }
 
 .content-second__column-first__floor-third {
@@ -404,6 +401,10 @@ input {
     margin-top: 8px;
 }
 
+.content-second__column-first__floor-third__column__left--text {
+    width: 122px;
+}
+
 .content-second__column-first__floor-third__column__left--text--first {
     font-weight: 500;
     font-size: 10px;
@@ -418,44 +419,8 @@ input {
 .content-second__column-first__floor-third__column--right {
     font-weight: 400;
     font-size: 8px;
-    max-width: 239px;
+    width: 239px;
     position: relative;
-}
-
-.content-second__column-first__floor-third__column--right::before {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    top: 4px;
-    left: -7px;
-}
-
-.content-second__column-first__floor-third__column--right::after {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    bottom: 17.5px;
-    left: -7px;
-}
-
-.content-second__column-first__floor-third__column__left--text--second::after {
-    content: '';
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    background-color: var(--color-dark);
-    display: block;
-    position: absolute;
-    bottom: -2.5px;
-    right: -53px;
 }
 
 .content-second__column-second {
@@ -639,23 +604,28 @@ input {
 .content-third__column-first__ciel__box-first--years {
     font-weight: 500;
     font-size: 10px;
+    color: var(--color-white);
 }
 
 .content-third__column-first__ciel__box-first--text-first {
     font-weight: 500;
     font-size: 10px;
     margin-top: 8px;
+    color: var(--color-white);
 }
 
 .content-third__column-first__ciel__box-first--text-second {
     font-weight: 400;
     font-size: 8px;
+    width: 110px;
+    color: var(--color-white);
 }
 
 .content-third__column-first__ciel__box-first--text-third {
     font-weight: 400;
     font-size: 8px;
     margin-top: 8px;
+    color: var(--color-white);
 }
 
 .content-third__column-first__ciel__box-second {
@@ -663,7 +633,6 @@ input {
     border-radius: 10px;
     padding: 8px;
     width: 124px;
-    height: 116px;
     transition: var(--transition-duration);
 }
 
@@ -682,6 +651,7 @@ input {
     font-weight: 400;
     font-size: 8px;
     color: #149063;
+    max-width: 110px;
 }
 
 .content-third__column-first__ciel__box-second--text-third {
@@ -695,7 +665,6 @@ input {
     border-radius: 10px;
     padding: 8px;
     width: 124px;
-    height: 116px;
     margin-top: 12px;
     transition: var(--transition-duration);
 }
@@ -715,6 +684,7 @@ input {
     font-weight: 400;
     font-size: 8px;
     color: #149063;
+    max-width: 110px;
 }
 
 .content-third__column-first__floor__box--text-third {
@@ -740,7 +710,7 @@ input {
     margin-top: 16px;
 }
 
-.content-third__column-second__ciel--word {
+.words {
     font-weight: 400;
     font-size: 10px;
     background-color: var(--color-white);
@@ -750,13 +720,12 @@ input {
     display: inline-block;
     margin-top: 12px;
     transition: var(--transition-duration);
-    cursor: pointer;
 }
 
 .content-third__column-second__floor {
     color: var(--color-white);
     background-color: var(--color-dark);
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 12px;
     width: 255px;
     border-radius: 12px;
@@ -772,12 +741,13 @@ input {
     font-weight: 400;
     font-size: 10px;
     margin-top: 11px;
+    color: var(--color-white);
 }
 
 .pdf {
-    position: absolute;
-    left: 50%;
     transform: translate(-50%);
+    margin-left: 50vw;
+    margin-bottom: 15px;
     border: 0;
     padding: 10px 20px;
     border-radius: 20px;
@@ -929,12 +899,11 @@ input {
 
 
 
-/* Эффект наведения */
+/* Эффект новедения */
 
 @media (hover: hover) {
-    .content-first--image--label:hover {
-        opacity: 100;
-        backdrop-filter: blur(0.7px);
+    .content-second__column-first__floor-first__ciel--text-second:hover {
+        transform: scale(1.1);
     }
 
     .icon:hover {
@@ -977,7 +946,7 @@ input {
         box-shadow: 1px 1px 10px 1px #5C5C5C inset;
     }
 
-    .content-third__column-second__ciel--word:hover {
+    .words:hover {
         box-shadow: 1px 1px 10px 1px #5C5C5C inset;
     }
 
