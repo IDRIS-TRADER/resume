@@ -745,6 +745,7 @@ textarea {
     font-size: 10px;
     margin-top: 11px;
     color: var(--color-white);
+    width: 243px
 }
 
 .pdf {
