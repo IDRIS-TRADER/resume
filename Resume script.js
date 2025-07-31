@@ -153,13 +153,13 @@ function scale(clas, text) {
     const maxWidth = 168
     let procent = document.querySelector(text)
 
-    line.addEventListener('mousedown', (event) => {
+     line.addEventListener('pointerdown', (event) => {
         isResizing = true
         startX = event.clientX
         event.preventDefault()
     })
 
-    document.addEventListener('mousemove', (event) => {
+    document.addEventListener('pointermove', (event) => {
         if (!isResizing) return
         if (isResizing) {
             event.preventDefault()
@@ -174,10 +174,12 @@ function scale(clas, text) {
         line.style.width = `${newWidth}px`
         startX = event.clientX
         procent.textContent = `${(newWidth / 168 * 100).toFixed(0)}`
+        procent.style.opacity = '100'
     })
 
-    document.addEventListener('mouseup', () => {
+    document.addEventListener('pointerup', () => {
         isResizing = false
+        procent.style.opacity = '0'
     })
 
     line.addEventListener('mouseover', () => {
